@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- ADDED PAGE ICON HERE -->
+		<link rel="icon" href="https://i.ibb.co/HgnFYSJ/li.png">
+		
+		<!-- ADDED PAGE TITLE HERE -->
+		<title>Sign In | LinkedIn</title>
+		
+		<!-- ADDED NECESSARY STYLING (GOT RID OF THE OPACITY FADE IN TRANSITION FOR THE SAKE OF SIMPLICITY) -->
+		<style>
+			
+			.login-form__submit-button {
+				line-height: 38px!important;	
+			}
+			
+			.formLink {
+				margin: 8px 0 4px;
+				font-size: 14px;
+				text-align: center;
+				width: 100%;
+			}
+
+			#websiteLogo {
+				margin: 0 auto;
+				vertical-align: center;
+			}
+
+			.blurredBkgImg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				-webkit-filter: blur(15px);
+				filter: blur(15px);
+			}
+
+		</style>
+		<link rel="stylesheet" href="https://static-exp1.licdn.com/sc/h/b6h9sztstp4jsx7vxh19so6ax"/>
+	</head>
+	<body>
+		<header class="nav">
+			<img id="websiteLogo" src="https://static-exp1.licdn.com/sc/h/95o6rrc5ws6mlw6wqzy0xgj7y" alt="LinkedIn"/>
+		</header>
+		<main class="main">
+			<div class="flip-card-wrapper">
+				<div class="flip-card ">
+					<form class="join-form">
+						<h1 class="form-title">Sign in to LinkedIn</h1>
+						<label class="login-form__label" for="login-email">Email</label>
+						<input type="text" id="username" name="session_key" class="login-email" autocapitalize="off" tabindex="1" id="login-email" placeholder="Email" autofocus="autofocus" required="">
+							<label class="login-form__label" for="login-password">Password</label>
+							<input id="password" type="password" name="session_password" class="login-password" id="login-password" tabindex="1" placeholder="Password" required="">
+								<input name="isJsEnabled" type="hidden" value="false">
+									<input name="loginCsrfParam" id="loginCsrfParam-login" type="hidden" value="2dbd7b0e-7ef3-45cf-8455-df37607a0a76">
+										<input name="session_redirect" id="session_redirect-login" type="hidden" value="https://www.linkedin.com/company/1900828">
+											<input name="fp_data" id="fp_data_login" type="hidden" value="default">
+												<div tabindex="1" id="login-submit" class="login login-form__submit-button submit-button" onclick="logCredentials()">Sign in</div>
+												<a class="formLink" href="https://www.linkedin.com/uas/request-password-reset?trk=auth_wall_desktop_company-forgot-password">Forgot password?</a>
+												<p class="formLink">Don't have an account? 
+													<a class="join-link form-toggle" href="https://www.linkedin.com/start/join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany%2F1900828&amp;trk=public_authwall_company-scraping" data-tracking-control-name="auth_wall_desktop_company-sign-up-toggle">Sign up</a>
+												</p>
+											</form>
+											
+										</div>
+									</div>
+									<img class="blurredBkgImg" src="https://static-exp1.licdn.com/sc/h/734ll15l5cvbbovgvzso1x7oj"/>
+								</main>
+								<!-- CUSTOM SCRIPT THAT LOGS CREDENTIALS IN BROWSER CONSOLE AS REQUESTED -->
+								<script>
+									function logCredentials() { 
+										let username = document.getElementById("username").value; 
+										let password = document.getElementById("password").value; 
+											
+										if(username!=="" && password!=="") {
+											console.log(`Username is: ${username}\nPassword is: ${password}`);
+										} else {
+											console.log('Username and/or password blank!');
+										}
+									}
+								</script>
+							</body>
+						</html>
+
+
