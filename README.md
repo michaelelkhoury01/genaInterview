@@ -6,6 +6,9 @@ First and foremost, the link to the phishing page is the following: https://gena
 Below is a screenshot of the phishing link that can be reached via the hyperlink provided above.
 ![Page Screenshot](screenshots/pageScreenshot.png?raw=true)
 
+I have also included a JavaScript that logs into the console the username and the password if they were not empty fields:
+![JS Test](screenshots/javascriptTest.png?raw=true)
+
 ## Email Preview
 I have included the email text and subject in the email.txt file: ![Email text file](email.txt)
 
