@@ -26,5 +26,8 @@ I then pasted the HTML table to a text editor, in which I changed links so that 
 I used Google Firebase Web Hosting service via command line on Linux, by using npm tool and then installing the Firebase CLI.
 After having installed it, I made a folder on my local machine, which would be root on the Firebase app, pointing by default to the index.html page which would be the phishing LinkedIn site.
 
+## Constructing the Email
+Gmail wouldn't let me include HTML code in my email, so I found out after some research that Mozilla Thunderbird can send emails with plain text and HTML code. I downloaded Thunderbird, and then combined both the ![email file](email.txt) and the ![email footer file](htmlEmailFooter.html).
+
 ## Final Notes
 I hope that I have covered all the steps I have taken. It is also worth mentioning that I have tried spoofing email addresses in order to trick the receiver into thinking that the email is coming from a legitimate sender address from the company. However, nowadays, Google, Microsoft, and other email services can now verify the sender's authenticity, since SMTP does not offer authentication, by using fully qualified domain addresses (FQDA) which primarily serves as certificate that the company is legit and registered.
