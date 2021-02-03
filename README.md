@@ -31,3 +31,6 @@ Gmail wouldn't let me include HTML code in my email, so I found out after some r
 
 ## Final Notes
 I hope that I have covered all the steps I have taken. It is also worth mentioning that I have tried spoofing email addresses in order to trick the receiver into thinking that the email is coming from a legitimate sender address from the company. However, nowadays, Google, Microsoft, and other email services can now verify the sender's authenticity, since SMTP does not offer authentication, by using fully qualified domain addresses (FQDA) which primarily serves as certificate that the company is legit and registered.
+
+## Total Time Spent
+The project took me 6 hours build, I fell into some rabbit holes trying to format the email correctly, but it was mostly the login page that was time consuming to clean up, style, get rid of unnecessary scripts, and host it on a web server.
